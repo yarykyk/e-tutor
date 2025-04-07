@@ -4,8 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>e-tutor</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/scripts/main.js" defer type="module"></script>
 </head>
 <body>
+    <header class="header">
+        <div class="header__links">
+            <div class="header__overlay is-active">
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link header__menu-link--current">Home</a>
+                        </li>
+                        <li class="header__menu-item ">
+                            <a href="/" class="header__menu-link">Courses</a>
+                        </li>
+                        <li class="header__menu-item ">
+                            <a href="/" class="header__menu-link">About</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="/" class="header__menu-link">Contact</a>
+                        </li>
+                        <li class="header__menu-item ">
+                            <a href="/" class="header__menu-link">Become an Instructor</a>
+                        </li>
+                    </ul>
+                    <div class="header__menu-dropdowns">
+                        <select class="header__menu-option header__menu-option--currency">
+                            <option value="1">USD</option>
+                            <option value="2">UAN</option>
+                            <option value="3">EUR</option>
+                        </select>
     
+                        <select class="header__menu-option header__menu-option--language">
+                            <option value="1">English</option>
+                            <option value="2">Ukrain</option>
+                            <option value="3">Italian</option>
+                        </select>
+                    </div>
+                </nav>
+            </div>
+            <button class="header__burger-button burger-button visible-mobile is-active" type="button" aria-label="Open menu" title="Open menu">
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+                <span class="burger-button__line"></span>
+            </button>
+        </div>
+        <div class="header__body">
+            <div class="header__body-left">
+                <a href="/" class="header__logo logo" aria-label="Home" title="Home">
+                    <img src="/images/LOGO.svg" class="header__logo-image" alt="Logo" width="153" height="40">
+                </a>
+                <input type="text" id="input_label" class="header__input" placeholder="What do you want to learn...">
+                <img src="/images/MagnifyingGlass.svg" alt="magGlass" class="header__img-inner" onclick="location.reload()">
+            </div>
+            <div class="header__body-right">
+                <img src="/images/BellSimple.svg" alt="bell" class="header__icon" width="24" height="24">
+                <img src="/images/HeartStraight.svg" alt="heart" class="header__icon" width="24" height="24">
+                <img src="/images/ShoppingCart.svg" alt="cart" class="header__icon" width="24" height="24">
+                <button class="button header__button--create">Create Account</button>
+                <button class="button header__button--sign">Sign In</button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
