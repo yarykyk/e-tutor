@@ -8,17 +8,21 @@
     justify-content: space-between;
     padding: rem(8.5) rem(4.25);
     color: var(--color-light);
-    background-color: red;
+    background-color: var(--color-primary-strong);
     border: none;
     float: left;
     z-index: 10;
+    margin-right: rem(20);
+    margin-left: rem(10);
+    position: fixed;
 
     &.is-active{
         .burger-button__line{
             &:first-child{
                 rotate: 45deg;
                 transform-origin: 0;
-                translate: 0.35em -0.15em;
+                translate: 0.3em -0.15em;
+                transition-delay: 0.1s;
             }
             &:nth-child(2){
                 rotate: -45deg;
