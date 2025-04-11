@@ -14,7 +14,7 @@
     z-index: 10;
     margin-right: rem(20);
     margin-left: rem(10);
-    position: fixed;
+    position: sticky;
 
     &.is-active{
         .burger-button__line{

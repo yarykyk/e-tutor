@@ -4,21 +4,20 @@ body{
     @include fluid-text(18, 14);
     
     font-family: var(--font-family-base);
-    color: var(--color-gray-strong);
-    background: linear-gradient(180deg, rgba(240, 242, 245, 0) 0.01%, #f0f2f5 100%);
+    // color: var(--color-gray-strong);
     letter-spacing: -0.01em;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-    color: var(--color-gray-light);
-}
+// h1, .h1,
+// h2, .h2,
+// h3, .h3,
+// h4, .h4,
+// h5, .h5,
+// h6, .h6 {
+//     color: var(--color-gray-light);
+// }
 
-h1, .h1{
+h1, .h1, .dispaly02{
     @include fluid-text(72, 32);
 
     line-height: 1.03;
@@ -37,7 +36,7 @@ h3, .h3{
     line-height: 1.25;
 }
 
-h4, .h4{
+h4, .h4, .heading04{
     @include fluid-text(24, 16);
 
     line-height: 1.33;

@@ -121,6 +121,9 @@
                     height: rem(34);
                     width: rem(384);
                 }
+                @include mobile-s{
+                    display: none;
+                }
             }
             .header__input:hover{
                 border: 3px solid #ffddd1;
@@ -133,6 +136,9 @@
                     height: rem(20);
                     top: rem(7);
                 }
+                @include mobile-s{
+                    display: none;
+                }
             }
 
         }
@@ -144,13 +150,16 @@
             @include mobile{
                 width: rem(624);
             }
+            @include mobile-s{
+                margin-left: rem(30);
+            }
         }
 
         .button{
             @include fluid-text(16, 12);
             height: rem(48);
-            font-weight: 600;
-            border: none;
+            letter-spacing: -0.01em;
+            text-transform: capitalize;
             @include mobile{
                 height: rem(34);
                 line-height: 100%;
@@ -159,8 +168,6 @@
 
         .header__button--create{
             width: rem(168);
-            color: var(--color-primary-strong);
-            background-color: var(--color-primary-light);
             margin-right: rem(-10);
             @include tablet{
                 width: rem(120);
@@ -169,27 +176,23 @@
                 margin-right: rem(10);
             }
         }
-        .header__button--create:hover{
-            background-color: #FFDDD1;
-        }
         .header__button--sign{
             width: rem(100);
-            color: var(--color-light);
-            background-color: var(--color-primary-strong);
             @include tablet{
                 width: rem(80);
             }
         }
-        .header__button--sign:hover{
-            background-color: #CC522B;
-            box-shadow: 0 6px 20px 0 rgba(204, 82, 43, 0.5);
-        }
+
         .header__icon{
             @include mobile{
                 align-self: center;
                 width: rem(20);
                 height: rem(20);
                 margin-right: rem(10);
+            }
+            @include mobile-s{
+                width: rem(18);
+                height: rem(18);
             }
         }
     }

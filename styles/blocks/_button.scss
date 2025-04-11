@@ -1,0 +1,20 @@
+.buttonStrong{
+    font-weight: 600;
+    border: none;
+    background-color: var(--color-primary-strong);
+    color: var(--color-light);
+}
+.buttonStrong:hover{
+    background-color: #CC522B;
+    box-shadow: 0 6px 20px 0 rgba(204, 82, 43, 0.5);
+}
+
+.buttonLight{
+    background-color: var(--color-primary-light);
+    font-weight: 600;
+    border: none;
+    color: var(--color-primary-strong);
+}
+.buttonLight:hover{
+    background-color: #FFDDD1;
+}
