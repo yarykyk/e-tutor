@@ -1,86 +1,165 @@
 @use '../helpers/' as *;
 
+// .main{
+//     .LearnWexp{
+//         display: flex;
+//         justify-content: flex-end;
+//         align-items: center;
+//         background-color: linear-gradient(180deg, rgba(240, 242, 245, 0) 0.01%, #f0f2f5 100%);
+//         @include mobile-s{
+//         }
+//         &__text{
+//             width: rem(648);
+//             @include laptop{
+//                 margin-left: rem(80);
+//             }
+//             @include tablet{
+//                 width: rem(450);
+//             }
+//             @include mobile-s{
+//                 width: rem(250);
+//             }
+//         }
+//         &__dispaly02{
+//             padding-block-end: rem(40);
+//             @include tablet{
+//                 font-size: rem(42);
+//                 padding-block-end: rem(27);
+//             }
+//             @include mobile{
+//                 font-size: rem(35);
+//                 padding-block-end: rem(15);
+//             }
+//             @include mobile-s{
+//                 font-size: rem(22);
+//                 padding-block-end: rem(10);
+//             }
+//         }
+//         &__header04{
+//             width: rem(500);
+//             padding-block-end: rem(40);
+//             color: var(--color-gray-strong);
+//             @include tablet{
+//                 width: rem(320);
+//                 font-size: rem(17);
+//             }
+//             @include mobile{
+//                 padding-block-end: rem(20);
+//                 font-size: rem(15);
+//             }
+//             @include mobile-s{
+//                 font-size: rem(12);
+//                 width: rem(200);
+//             }
+//         }
+//         &__button{
+//             width: rem(198);
+//             height: rem(56);
+//             font-weight: 600;
+//             @include fluid-text(18, 12);
+//             letter-spacing: 0.01em;
+//             @include tablet{
+//                 font-size: rem(17);
+//             }
+//             @include mobile{
+//                 width: rem(160);
+//                 height: rem(45);
+//                 font-size: rem(16);
+//             }
+//             @include mobile-s{
+//                 width: rem(130);
+//                 height: rem(36);
+//                 font-size: rem(13);
+//             }
+//         }
+//         &__img{
+//             @include tablet{
+//                 width: rem(550);
+//             }
+//             @include mobile{
+//                 width: rem(400);
+//             }
+//             @include mobile-s{
+//                 width: rem(250);
+//             }
+//         }
+//     }
+// }
+
+
+
 .main{
     .LearnWexp{
         display: flex;
-        justify-content: flex-end;
         align-items: center;
+        justify-content: flex-end;
+        gap: rem(52);
         background-color: linear-gradient(180deg, rgba(240, 242, 245, 0) 0.01%, #f0f2f5 100%);
+        @include tablet{
+            flex-direction: column-reverse;
+            text-align: center;
+            gap: rem(55);
+        }
         @include mobile-s{
+            gap: rem(25);
         }
         &__text{
-            width: rem(648);
+            max-width: rem(488);
             @include laptop{
-                margin-left: rem(80);
+                max-width: 40%;
             }
             @include tablet{
-                width: rem(450);
-            }
-            @include mobile-s{
-                width: rem(250);
+                max-width: 100%;
             }
         }
         &__dispaly02{
-            padding-block-end: rem(40);
+            font-size: rem(50);
+            line-height: 1.2;
             @include tablet{
-                font-size: rem(42);
-                padding-block-end: rem(27);
-            }
-            @include mobile{
-                font-size: rem(35);
-                padding-block-end: rem(15);
-            }
-            @include mobile-s{
-                font-size: rem(22);
-                padding-block-end: rem(10);
+                font-size: 2rem;
             }
         }
         &__header04{
-            width: rem(500);
-            padding-block-end: rem(40);
+            font-size: rem(20);
             color: var(--color-gray-strong);
+            margin: rem(40) 0;
+            @include laptop{
+                font-size: rem(18);
+            }
             @include tablet{
-                width: rem(320);
-                font-size: rem(17);
+                font-size: 1.1rem;
+                margin: rem(30) 0;
             }
             @include mobile{
-                padding-block-end: rem(20);
-                font-size: rem(15);
+                font-size: 0.95rem;
             }
             @include mobile-s{
-                font-size: rem(12);
-                width: rem(200);
+                margin: rem(20) 0;
             }
         }
         &__button{
             width: rem(198);
             height: rem(56);
-            font-weight: 600;
-            @include fluid-text(18, 12);
             letter-spacing: 0.01em;
-            @include tablet{
-                font-size: rem(17);
-            }
-            @include mobile{
-                width: rem(160);
-                height: rem(45);
-                font-size: rem(16);
-            }
             @include mobile-s{
-                width: rem(130);
-                height: rem(36);
-                font-size: rem(13);
+                width: rem(180);
+                height: rem(48);
+                font-size: rem(16);
             }
         }
         &__img{
-            @include tablet{
-                width: rem(550);
+            max-width: 100%;
+            height: auto;
+            clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+            @include laptop{
+                max-width: 50%;
             }
-            @include mobile{
-                width: rem(400);
+            @include tablet{
+                clip-path: none;
             }
             @include mobile-s{
-                width: rem(250);
+                max-width: 90%;
+                height: rem(200);
             }
         }
     }

@@ -121,7 +121,7 @@
                     height: rem(34);
                     width: rem(384);
                 }
-                @include mobile-s{
+                @include mobile{
                     display: none;
                 }
             }
@@ -136,7 +136,7 @@
                     height: rem(20);
                     top: rem(7);
                 }
-                @include mobile-s{
+                @include mobile{
                     display: none;
                 }
             }
@@ -149,6 +149,7 @@
             width: rem(424);
             @include mobile{
                 width: rem(624);
+                justify-content: flex-end;
             }
             @include mobile-s{
                 margin-left: rem(30);
