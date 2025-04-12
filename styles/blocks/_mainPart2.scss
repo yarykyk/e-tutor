@@ -1,0 +1,46 @@
+@use '../helpers/' as *;
+
+.main{
+    .BrowseTCat{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: rem(80);
+
+        &__categories{
+            display: flex;
+            flex-wrap: wrap;
+            width: rem(1320);
+            gap: rem(24);
+            margin-block: rem(40);
+        }
+        &__choise{
+            width: rem(312);
+            height: rem(104);
+            background-color: rgba(255, 0 ,0, 0.3);
+            display: flex;
+            align-items: center;
+        }
+        &__img{
+            width: rem(64);
+            height: rem(64);
+            margin: rem(20);
+        }
+        &__bodyLarge500{
+            margin-bottom: rem(8);
+        }
+        &__bodyMedium400{
+            color: #6E7485;
+        }
+        &__p{
+            display: flex;
+            color: var(--color-gray-strong);
+
+        }
+        &__a{
+            display: flex;
+            color: var(--color-primary-strong);
+            margin-left: rem(12);
+        }
+    }
+}

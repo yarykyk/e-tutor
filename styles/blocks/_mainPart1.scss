@@ -93,9 +93,14 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: rem(52);
+        gap: rem(132);
+        margin-left: 80px;
         background-color: linear-gradient(180deg, rgba(240, 242, 245, 0) 0.01%, #f0f2f5 100%);
+        @include laptop{
+            gap: rem(52);
+        }
         @include tablet{
+            margin-left: 0;
             flex-direction: column-reverse;
             text-align: center;
             gap: rem(55);

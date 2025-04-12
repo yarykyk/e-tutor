@@ -302,6 +302,21 @@ h4, .h4, .heading04 {
   line-height: 1.33;
 }
 
+.bodyLarge500 {
+  font-weight: 500;
+  font-size: clamp(0.875rem, 0.8431372549rem + 0.1307189542vw, 1rem);
+  line-height: 137%;
+  color: #000;
+}
+
+.bodyMedium400 {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 157%;
+  letter-spacing: -0.01em;
+  color: #000;
+}
+
 a,
 button,
 label,
@@ -627,11 +642,18 @@ button[aria-label]::before {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 3.25rem;
+  gap: 8.25rem;
+  margin-left: 80px;
   background-color: linear-gradient(180deg, rgba(240, 242, 245, 0) 0.01%, #f0f2f5 100%);
+}
+@media (width <= 90.06125rem) {
+  .main .LearnWexp {
+    gap: 3.25rem;
+  }
 }
 @media (width <= 63.99875rem) {
   .main .LearnWexp {
+    margin-left: 0;
     flex-direction: column-reverse;
     text-align: center;
     gap: 3.4375rem;
@@ -724,4 +746,45 @@ button[aria-label]::before {
     max-width: 90%;
     height: 12.5rem;
   }
+}
+
+.main .BrowseTCat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+.main .BrowseTCat__categories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 82.5rem;
+  gap: 1.5rem;
+  margin-block: 2.5rem;
+}
+.main .BrowseTCat__choise {
+  width: 19.5rem;
+  height: 6.5rem;
+  background-color: rgba(255, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+.main .BrowseTCat__img {
+  width: 4rem;
+  height: 4rem;
+  margin: 1.25rem;
+}
+.main .BrowseTCat__bodyLarge500 {
+  margin-bottom: 0.5rem;
+}
+.main .BrowseTCat__bodyMedium400 {
+  color: #6E7485;
+}
+.main .BrowseTCat__p {
+  display: flex;
+  color: var(--color-gray-strong);
+}
+.main .BrowseTCat__a {
+  display: flex;
+  color: var(--color-primary-strong);
+  margin-left: 0.75rem;
 }
