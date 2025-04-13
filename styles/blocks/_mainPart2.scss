@@ -10,9 +10,11 @@
         &__categories{
             display: flex;
             flex-wrap: wrap;
-            width: rem(1320);
+            max-width: rem(1320);
+            height: auto;
             gap: rem(24);
             margin-block: rem(40);
+            justify-content: center;
         }
         &__choise{
             width: rem(312);
