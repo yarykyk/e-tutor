@@ -14,9 +14,9 @@
     z-index: 10;
     margin-right: rem(20);
     margin-left: rem(10);
-    position: sticky;
 
     &.is-active{
+        position: fixed;
         .burger-button__line{
             &:first-child{
                 rotate: 45deg;

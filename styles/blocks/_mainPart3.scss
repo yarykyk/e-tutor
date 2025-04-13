@@ -1,0 +1,73 @@
+@use '../helpers/' as *;
+
+.main{
+    .BestSelling{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F5F7FA;
+
+        &__display02{
+            margin-top: rem(80);
+        }
+        &__BestBlock{
+            max-width: rem(1320);
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(25);
+            margin-top: rem(40);
+            justify-content: center;
+        }
+        &__course{
+            width: rem(244);
+            height: rem(333);
+        }
+        &__info{
+            padding: rem(14);
+            border-bottom: rem(1) solid #E9EAF0;
+        }
+        &__label{
+            height: fit-content;   
+            align-self: center;
+            padding: rem(4) rem(6);
+            text-transform: uppercase;
+            margin-bottom: rem(11);
+        }
+        &__cost{
+            color: var(--color-primary-strong);
+        }
+        &__describe{
+            color: #1D2026;
+        }
+        &__helper{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        &__rate{
+            display: flex;
+            color: var(--color-gray-strong);
+        }
+        &__number{
+            display: flex;
+            color: var(--color-gray-strong);
+        }
+        &__students{
+            color: #8C94A3;
+        }
+        &__bottomPartCard{
+            height: rem(20);
+            margin: rem(14);
+            display: flex;
+            justify-content: space-between;
+        }
+        &__star{
+            margin: rem(2);
+        }
+        &__numberStudents{
+            display: flex;
+            gap: rem(4);
+        }
+    }
+}
