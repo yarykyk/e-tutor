@@ -36,7 +36,12 @@ h3, .h3{
 
     line-height: 1.25;
 }
-
+.heading02{
+    font-weight: 600;
+    font-size: rem(40);
+    line-height: 120%;
+    letter-spacing: -0.01em;
+}
 h4, .h4, .heading04{
     @include fluid-text(24, 16);
 
@@ -72,6 +77,12 @@ h4, .h4, .heading04{
     font-weight: 600;
     font-size: rem(16);
     line-height: 137%;
+}
+.bodyXL{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 133%;
+    letter-spacing: -0.01em;
 }
 
 a, 

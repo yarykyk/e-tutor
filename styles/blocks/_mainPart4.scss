@@ -1,0 +1,74 @@
+@use '../helpers/' as *;
+
+.main{
+    .OurFeatureCorse{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        max-width: rem(1480);
+
+        &__BlockCourses{
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            justify-content: center;
+            gap: rem(24);
+        }
+        &__corse{
+            max-width: rem(648);
+            height: rem(188);
+            display: flex;
+            border: 1px solid #E9EAF0;
+        }
+        &__topPart{
+            display: flex;
+            flex-direction: column;
+            padding: rem(16) rem(24);
+            border-bottom: 1px solid #E9EAF0;
+        }
+        &__logo-cost{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: rem(10);
+        }
+        &__cost{
+            display: flex;
+        }
+        &__describe{
+            margin-bottom: rem(17);
+        }
+        &__Foto-rate{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__name-photo{
+            display: flex;
+        }
+        &__BoyName{
+            margin-left: rem(12);
+        }
+        &__rating{
+            display: flex;
+        }
+
+        &__bottomPart{
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+            height: rem(22);
+            margin: rem(17) rem(22);
+        }
+        &__usersPart{
+            display: flex;
+        }
+        &__BegginerPart{
+            display: flex;
+        }
+        &__timePart{
+            display: flex;
+        }
+    }
+}
