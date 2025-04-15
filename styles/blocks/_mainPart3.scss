@@ -18,7 +18,10 @@
             gap: rem(25);
             margin-top: rem(40);
             justify-content: center;
-            margin-bottom: 320px;
+            margin-bottom: rem(320);
+            @include mobile-s{
+                margin-bottom: rem(50);
+            }
         }
         &__course{
             width: rem(244);

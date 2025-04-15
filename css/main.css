@@ -761,6 +761,11 @@ button[aria-label]::before {
     font-size: 1rem;
   }
 }
+@media (width <= 63.99875rem) {
+  .main .LearnWexp__button {
+    margin-bottom: 1.875rem;
+  }
+}
 .main .LearnWexp__img {
   max-width: 100%;
   height: auto;
@@ -846,7 +851,12 @@ button[aria-label]::before {
   gap: 1.5625rem;
   margin-top: 2.5rem;
   justify-content: center;
-  margin-bottom: 320px;
+  margin-bottom: 20rem;
+}
+@media (width <= 30.06125rem) {
+  .main .BestSelling__BestBlock {
+    margin-bottom: 3.125rem;
+  }
 }
 .main .BestSelling__course {
   width: 15.25rem;
@@ -901,11 +911,45 @@ button[aria-label]::before {
 }
 
 .main .OurFeatureCorse {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center;
   max-width: 92.5rem;
+  height: auto;
+  outline: 1px solid #E9EAF0;
+  z-index: 10;
+}
+.main .OurFeatureCorse__container {
+  padding: 5rem;
+}
+@media (width <= 30.06125rem) {
+  .main .OurFeatureCorse__container {
+    padding: 0;
+  }
+}
+.main .OurFeatureCorse__headingdefenition {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+@media (width <= 90.06125rem) {
+  .main .OurFeatureCorse__headingdefenition {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (width <= 90.06125rem) {
+  .main .OurFeatureCorse__heading02 {
+    margin-bottom: 0.625rem;
+  }
+}
+.main .OurFeatureCorse__Vestibulum {
+  max-width: 26.5rem;
+  color: #4E5566;
 }
 .main .OurFeatureCorse__BlockCourses {
   display: flex;
@@ -914,13 +958,29 @@ button[aria-label]::before {
   justify-content: center;
   gap: 1.5rem;
 }
+@media (max-width: 800px) {
+  .main .OurFeatureCorse__BlockCourses {
+    gap: 18.75rem;
+  }
+}
 .main .OurFeatureCorse__corse {
-  max-width: 40.5rem;
   height: 11.75rem;
+  max-width: 40.5rem;
   display: flex;
   border: 1px solid #E9EAF0;
 }
+@media (max-width: 800px) {
+  .main .OurFeatureCorse__corse {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .main .OurFeatureCorse__image {
+    height: 17.5rem;
+  }
+}
 .main .OurFeatureCorse__topPart {
+  width: 26.75rem;
   display: flex;
   flex-direction: column;
   padding: 1rem 1.5rem;
@@ -932,8 +992,20 @@ button[aria-label]::before {
   align-items: center;
   margin-bottom: 0.625rem;
 }
+.main .OurFeatureCorse__bodyTiny500 {
+  padding: 0.25rem 0.375rem;
+  text-transform: uppercase;
+}
 .main .OurFeatureCorse__cost {
   display: flex;
+}
+.main .OurFeatureCorse__secondAmount {
+  color: #A1A5B3;
+  margin-left: 0.25rem;
+}
+.main .OurFeatureCorse__numberOFstudents {
+  color: #8C94A3;
+  margin-left: 0.25rem;
 }
 .main .OurFeatureCorse__describe {
   margin-bottom: 1.0625rem;
@@ -948,9 +1020,14 @@ button[aria-label]::before {
 }
 .main .OurFeatureCorse__BoyName {
   margin-left: 0.75rem;
+  color: #4E5566;
 }
 .main .OurFeatureCorse__rating {
   display: flex;
+}
+.main .OurFeatureCorse__qualityRate {
+  color: #1D2026;
+  margin-left: 0.25rem;
 }
 .main .OurFeatureCorse__bottomPart {
   display: flex;
@@ -962,9 +1039,25 @@ button[aria-label]::before {
 .main .OurFeatureCorse__usersPart {
   display: flex;
 }
+.main .OurFeatureCorse__numstudents {
+  color: #4E5566;
+  margin-left: 0.375rem;
+}
+.main .OurFeatureCorse__studnt {
+  color: #8C94A3;
+  margin-left: 0.25rem;
+}
 .main .OurFeatureCorse__BegginerPart {
   display: flex;
 }
+.main .OurFeatureCorse__beginner {
+  color: #4E5566;
+  margin-left: 0.25rem;
+}
 .main .OurFeatureCorse__timePart {
   display: flex;
+}
+.main .OurFeatureCorse__time {
+  color: #4E5566;
+  margin-left: 0.25rem;
 }
