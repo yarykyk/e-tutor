@@ -9,6 +9,12 @@ body{
     user-select: none
 }
 
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+}
 // h1, .h1,
 // h2, .h2,
 // h3, .h3,

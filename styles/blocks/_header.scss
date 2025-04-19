@@ -3,7 +3,7 @@
 .header{
     &__links{
         background-color: var(--color-dark);
-
+        z-index: 20;
         .header__overlay{
             @include mobile-above{
                 display: contents;

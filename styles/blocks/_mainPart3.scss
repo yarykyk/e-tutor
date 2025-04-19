@@ -19,13 +19,17 @@
             margin-top: rem(40);
             justify-content: center;
             margin-bottom: rem(320);
+            @include mobile{
+                margin-bottom: rem(200);
+            }
             @include mobile-s{
-                margin-bottom: rem(50);
+                margin-bottom: rem(100);
             }
         }
         &__course{
             width: rem(244);
             height: rem(333);
+            background-color: #fff;
         }
         &__info{
             padding: rem(14);
