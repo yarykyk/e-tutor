@@ -103,12 +103,18 @@
         @include mobile{
             margin-block: rem(10);
         }
+        @include mobile-s{
+        }
 
         &-left{
             display: flex;
             column-gap: rem(50);
             @include mobile{
                 column-gap: rem(15);
+            }
+            @include mobile-s{
+                @include hide;
+                display: none;
             }
 
             .header__input{
@@ -152,7 +158,7 @@
                 justify-content: flex-end;
             }
             @include mobile-s{
-                margin-left: rem(30);
+                // margin-left: rem(30);
             }
         }
 
