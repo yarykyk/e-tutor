@@ -15,6 +15,8 @@
                 z-index: 10;
                 display: flex;
                 flex-direction: column;
+                align-items: center;
+                padding-top: rem(60);
                 row-gap: 3rem;
                 background-color: var(--color-dark);
                 transition-delay: var(--transition-duration);
@@ -32,6 +34,9 @@
                         align-self: flex-start;
                         margin-left: rem(13);
                         margin-top: rem(15);
+                        .header__menu-option{
+                            margin-bottom: rem(20);
+                        }
                     }
                 }
 

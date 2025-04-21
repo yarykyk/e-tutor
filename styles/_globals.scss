@@ -37,10 +37,11 @@ h2, .h2{
     line-height: 1.2;
 }
 
-h3, .h3{
+h3, .h3, .heading03{
     @include fluid-text(32, 20);
-
-    line-height: 1.25;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.01em;
 }
 .heading02{
     font-weight: 600;
@@ -52,6 +53,12 @@ h4, .h4, .heading04{
     @include fluid-text(24, 16);
 
     line-height: 1.33;
+}
+
+.bodyLarge400{
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 150%;
 }
 
 .bodyLarge500{

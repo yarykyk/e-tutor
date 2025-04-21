@@ -14,6 +14,7 @@
         top: 50%;
         left: 50%;  
         transform: translate(-50%, -40%);
+        z-index: 30;
         @include tablet{
             max-width: rem(700);
         }
@@ -33,6 +34,9 @@
                 padding: 0;
             }
             @include mobile{
+                &.is-active{
+                    margin-bottom: rem(-500);
+                }
                 padding: 0;
                 padding-bottom: rem(280);
             }
@@ -180,18 +184,27 @@
     @media (min-width: 1480px) {
         .OurFeatureCorse{
             &__closeBlock{
-                @include hide;
+                display: none;
+
             }
             &__burger-button{
-                @include hide;
+                display: none;
             }
         }
     }
     @media (max-width: 1479px) {
         .OurFeatureCorse{
+            outline: none;
             &__container{
                 &:not(.is-active){
                     display: none;
+                }
+                &.is-active{
+                    margin-bottom: rem(-350);
+                    background-color: #f2f2f2;
+                    @include mobile{
+                        margin-bottom: rem(-550);
+                    }
                 }
             }
             width: rem(1000);
@@ -215,7 +228,9 @@
                 }
                 @include mobile-s{
                     top: rem(10);
-                    left: rem(10);
+                    left: rem(13);
+                    width: rem(35);
+                    height: rem(35);
                 }
             }
             &__line{
@@ -230,6 +245,9 @@
                     transform-origin: 0;
                     translate: 0.3em -0.1em;
                     transition-delay: 0.1s;
+                    @include mobile-s{
+                        translate: 0.3em -0.15em;
+                    }
                 }
                 &:nth-child(2){
                     rotate: -45deg;
@@ -257,6 +275,7 @@
                     bottom: rem(0);
                     font-size: rem(17);
                     padding: rem(10);
+                    margin-bottom: rem(20);
                 }
             }
         }

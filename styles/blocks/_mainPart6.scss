@@ -1,0 +1,157 @@
+@use '../helpers/' as *;
+
+.main{
+    .BecomeInstructor{
+        background-color: #F5F7FA;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        &__container{
+            display: flex;
+            max-width: rem(1320);
+            justify-content: center;
+            flex-wrap: wrap;
+            height: auto;
+            gap: rem(24);
+            margin-top: rem(81);
+            // padding: rem(81) rem(300) rem(320) rem(300);
+            .BecomeInstructor-block{
+                background: url('/images/BecomeAnInstructor/Instructor.png');
+                background-color: #E35B30;
+                width: rem(648);
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                background-size: rem(600) rem(250);
+                height: rem(270);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__textPart{
+                    max-width: rem(385);
+                    color: #fff;
+                    text-align: left;
+                    padding-left: rem(40);
+                    display: flex;
+                    flex-direction: column;
+                }
+                &__become{
+                    margin-bottom: rem(12);
+                }
+                &__describe{
+                    font-weight: 400;
+                    font-size: rem(14);
+                    line-height: 157%;
+                    letter-spacing: -0.01em;
+                    margin-bottom: rem(24);
+                }
+                &__start-teaching{
+                    width: rem(196);
+                    height: rem(48);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: none;
+                    font-weight: 600;
+                    font-size: rem(16);
+                    line-height: 300%;
+                    letter-spacing: -0.01em;
+                    text-transform: capitalize;
+                    color: var(--color-primary-strong);
+                }
+            }
+
+            .Your-teaching{
+                width: rem(648);
+                height: rem(270);
+                display: flex;
+                flex-direction: column;
+                padding: rem(40) ;
+                &__your-teaching{
+                    margin-bottom: rem(27);
+                }
+                &__steps-apploing{
+                    // display: flex;
+                    // flex-wrap: wrap;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    gap: rem(20);
+                }
+                &__step{
+                    display: flex;
+                    align-items: center;
+                }
+                &__number{
+                    width: rem(52);
+                    height: rem(52);
+                    background-color: lightblue;
+                    border-radius: 50%;
+                    font-weight: 600;
+                    font-size: rem(24);
+                    line-height: 124%;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: rem(16);
+                }
+                &__describe-of-step{
+                    font-weight: 400;
+                    font-size: rem(16);
+                    line-height: 150%;
+                    color: #1D2026;
+                }
+            }
+        }
+    }
+    @media (max-width: 648px) {
+        .BecomeInstructor{
+            &__container{
+                .BecomeInstructor-block{
+                    background-image: none;
+                    justify-content: center;
+                    width: rem(450);
+                    &__textPart{
+                        text-align: center;
+                        padding: 0;
+                    }
+                    &__start-teaching{
+                        align-self: center;
+                    }
+                }
+                .Your-teaching{
+                    width: rem(450);
+                    padding: 0;
+                    padding-top: rem(40);
+                    text-align: center;
+                }
+            }
+        }
+    }
+    @media (max-width: 450px) {
+        .BecomeInstructor{
+            &__container{
+                margin-bottom: rem(100);
+                .BecomeInstructor-block{
+                    width: rem(300);
+                    height: rem(230);
+                    &__start-teaching{
+                        width: rem(150);
+                        height: rem(40);
+                        font-size: rem(15);
+                    }
+                    &__describe{
+                        font-size: rem(12);
+                    }
+                }
+                .Your-teaching{
+                    width: rem(300);
+                    &__steps-apploing{
+                        grid-template-columns: 1fr;
+                        grid-template-rows: repeat(1fr, 4);
+                    }
+                }
+            }
+        }            
+    }
+}
