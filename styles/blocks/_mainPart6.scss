@@ -2,6 +2,7 @@
 
 .main{
     .BecomeInstructor{
+        padding-bottom: rem(320);
         background-color: #F5F7FA;
         height: auto;
         display: flex;
@@ -138,7 +139,7 @@
                     &__start-teaching{
                         width: rem(150);
                         height: rem(40);
-                        font-size: rem(15);
+                        font-size: rem(13);
                     }
                     &__describe{
                         font-size: rem(12);

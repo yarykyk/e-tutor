@@ -1,0 +1,64 @@
+@use '../helpers/' as *;
+
+.main{
+    .TopInstructors{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 50%;
+        left: 50%;  
+        transform: translate(-50%, -40%);
+        z-index: 30;
+        @include tablet{
+            max-width: rem(700);
+        }
+        @include mobile{
+            max-width: rem(480);
+        }
+        @include mobile-s{
+            max-width: rem(310);
+        }
+        &__container{
+            width: rem(1480);
+            height: auto;
+            background-color: #fff;
+            outline: 1px solid #E9EAF0;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__heading{
+            margin-top: rem(80);
+        }
+        &__top-instrucctors-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: rem(25);
+            margin: rem(40) rem(80);
+            height: auto;
+            .BestSelling__course{
+                height: rem(370);
+                width: rem(244);
+                outline: 1px solid #E9EAF0;
+                .BestSelling__info{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .BestSelling__describe{
+                        color: #1D2026;
+                        margin-bottom: rem(4);
+                    }
+                    .BestSelling__job{
+                        color: #8C94A3;
+                    }
+                }
+            }
+        }
+        &__We-have-more{
+            margin-bottom: rem(80);
+            color: #6E7485;
+        }
+    }
+}

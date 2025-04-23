@@ -363,7 +363,7 @@ h4, .h4, .heading04 {
 
 .bodyXL {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 133%;
   letter-spacing: -0.01em;
 }
@@ -1277,6 +1277,7 @@ main .Recentlyadded .Course-container {
 main .Recentlyadded .Course-container .BestSelling__course {
   height: 24.25rem;
   width: 19.5rem;
+  outline: 1px solid #E9EAF0;
 }
 main .Recentlyadded__Browse-all {
   display: flex;
@@ -1300,6 +1301,7 @@ main .Recentlyadded__Browse-all img {
 }
 
 .main .BecomeInstructor {
+  padding-bottom: 20rem;
   background-color: #F5F7FA;
   height: auto;
   display: flex;
@@ -1429,7 +1431,7 @@ main .Recentlyadded__Browse-all img {
   .main .BecomeInstructor__container .BecomeInstructor-block__start-teaching {
     width: 9.375rem;
     height: 2.5rem;
-    font-size: 0.9375rem;
+    font-size: 0.8125rem;
   }
   .main .BecomeInstructor__container .BecomeInstructor-block__describe {
     font-size: 0.75rem;
@@ -1441,4 +1443,71 @@ main .Recentlyadded__Browse-all img {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr, 4);
   }
+}
+
+.main .TopInstructors {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  z-index: 30;
+}
+@media (width <= 63.99875rem) {
+  .main .TopInstructors {
+    max-width: 43.75rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .main .TopInstructors {
+    max-width: 30rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .main .TopInstructors {
+    max-width: 19.375rem;
+  }
+}
+.main .TopInstructors__container {
+  width: 92.5rem;
+  height: auto;
+  background-color: #fff;
+  outline: 1px solid #E9EAF0;
+}
+.main .TopInstructors__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .TopInstructors__heading {
+  margin-top: 5rem;
+}
+.main .TopInstructors__top-instrucctors-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5625rem;
+  margin: 2.5rem 5rem;
+  height: auto;
+}
+.main .TopInstructors__top-instrucctors-container .BestSelling__course {
+  height: 23.125rem;
+  width: 15.25rem;
+  outline: 1px solid #E9EAF0;
+}
+.main .TopInstructors__top-instrucctors-container .BestSelling__course .BestSelling__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .TopInstructors__top-instrucctors-container .BestSelling__course .BestSelling__info .BestSelling__describe {
+  color: #1D2026;
+  margin-bottom: 0.25rem;
+}
+.main .TopInstructors__top-instrucctors-container .BestSelling__course .BestSelling__info .BestSelling__job {
+  color: #8C94A3;
+}
+.main .TopInstructors__We-have-more {
+  margin-bottom: 5rem;
+  color: #6E7485;
 }
