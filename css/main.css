@@ -1228,7 +1228,7 @@ button[aria-label]::before {
     width: 0;
   }
   .main .OurFeatureCorse__burger-button {
-    font-size: 1.6875rem;
+    font-size: 1.5625rem;
     font-weight: 500;
     padding: 0.9375rem;
     width: auto;
@@ -1306,6 +1306,16 @@ main .Recentlyadded__Browse-all img {
   height: auto;
   display: flex;
   justify-content: center;
+}
+@media (width <= 47.99875rem) {
+  .main .BecomeInstructor {
+    padding-bottom: 15.625rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .main .BecomeInstructor {
+    padding-bottom: 5rem;
+  }
 }
 .main .BecomeInstructor__container {
   display: flex;
@@ -1475,6 +1485,11 @@ main .Recentlyadded__Browse-all img {
   background-color: #fff;
   outline: 1px solid #E9EAF0;
 }
+@media (width <= 30.06125rem) {
+  .main .TopInstructors__container {
+    max-width: 19.375rem;
+  }
+}
 .main .TopInstructors__content {
   display: flex;
   flex-direction: column;
@@ -1510,4 +1525,132 @@ main .Recentlyadded__Browse-all img {
 .main .TopInstructors__We-have-more {
   margin-bottom: 5rem;
   color: #6E7485;
+}
+@media (min-width: 1480px) {
+  .main .TopInstructors__closeBlock {
+    display: none;
+  }
+  .main .TopInstructors__burger-button {
+    display: none;
+  }
+}
+@media (max-width: 1479px) {
+  .main .TopInstructors {
+    width: 62.5rem;
+  }
+  .main .TopInstructors__container:not(.is-active) {
+    display: none;
+  }
+  .main .TopInstructors__container.is-active {
+    background-color: #f2f2f2;
+  }
+}
+@media (max-width: 1479px) and (width <= 47.99875rem) {
+  .main .TopInstructors__container.is-active {
+    margin-bottom: -34.375rem;
+  }
+}
+@media (max-width: 1479px) {
+  .main .TopInstructors__top-instrucctors-container.is-active {
+    justify-content: center;
+  }
+}
+@media (max-width: 1479px) and (width <= 47.99875rem) {
+  .main .TopInstructors__heading {
+    margin-top: 3.125rem;
+    text-align: center;
+  }
+}
+@media (max-width: 1479px) and (width <= 47.99875rem) {
+  .main .TopInstructors__We-have-more {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.9375rem;
+  }
+}
+@media (max-width: 1479px) {
+  .main .TopInstructors__closeBlock {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.625rem 0.3125rem;
+    color: var(--color-light);
+    background-color: var(--color-primary-strong);
+    border: none;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.875rem;
+  }
+}
+@media (max-width: 1479px) and (width <= 47.99875rem) {
+  .main .TopInstructors__closeBlock {
+    top: 0.3125rem;
+    left: 0.3125rem;
+  }
+}
+@media (max-width: 1479px) and (width <= 30.06125rem) {
+  .main .TopInstructors__closeBlock {
+    top: 0.625rem;
+    left: 0.625rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+  }
+}
+@media (max-width: 1479px) {
+  .main .TopInstructors__line {
+    width: 100%;
+    height: 0.1875rem;
+    border-radius: 1rem;
+    background-color: currentColor;
+    transition-duration: var(--transition-duration);
+  }
+  .main .TopInstructors__line:first-child {
+    rotate: 45deg;
+    transform-origin: 0;
+    translate: 0.3em -0.1em;
+    transition-delay: 0.1s;
+  }
+}
+@media (max-width: 1479px) and (width <= 30.06125rem) {
+  .main .TopInstructors__line:first-child {
+    translate: 0.3em -0.15em;
+  }
+}
+@media (max-width: 1479px) {
+  .main .TopInstructors__line:nth-child(2) {
+    rotate: -45deg;
+  }
+  .main .TopInstructors__line:last-child {
+    width: 0;
+  }
+  .main .TopInstructors__burger-button {
+    font-size: 1.5625rem;
+    font-weight: 500;
+    padding: 0.9375rem 1.25rem;
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 9.375rem;
+  }
+  .main .TopInstructors__burger-button:not(.is-active) {
+    display: none;
+  }
+}
+@media (max-width: 1479px) and (width <= 47.99875rem) {
+  .main .TopInstructors__burger-button {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1479px) and (width <= 30.06125rem) {
+  .main .TopInstructors__burger-button {
+    bottom: 0rem;
+    font-size: 1.0625rem;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+  }
 }

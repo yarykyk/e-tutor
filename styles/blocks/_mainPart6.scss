@@ -7,6 +7,12 @@
         height: auto;
         display: flex;
         justify-content: center;
+        @include mobile{
+            padding-bottom: rem(250);
+        }
+        @include mobile-s{
+            padding-bottom: rem(80);
+        }        
         &__container{
             display: flex;
             max-width: rem(1320);
