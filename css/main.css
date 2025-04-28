@@ -1307,9 +1307,14 @@ main .Recentlyadded__Browse-all img {
   display: flex;
   justify-content: center;
 }
+@media (width <= 90.06125rem) {
+  .main .BecomeInstructor {
+    padding-bottom: 13.75rem;
+  }
+}
 @media (width <= 47.99875rem) {
   .main .BecomeInstructor {
-    padding-bottom: 15.625rem;
+    padding-bottom: 10rem;
   }
 }
 @media (width <= 30.06125rem) {
@@ -1463,6 +1468,7 @@ main .Recentlyadded__Browse-all img {
   left: 50%;
   transform: translate(-50%, -40%);
   z-index: 30;
+  margin-bottom: -10.625rem;
 }
 @media (width <= 63.99875rem) {
   .main .TopInstructors {
@@ -1537,6 +1543,7 @@ main .Recentlyadded__Browse-all img {
 @media (max-width: 1479px) {
   .main .TopInstructors {
     width: 62.5rem;
+    margin-bottom: 6.25rem;
   }
   .main .TopInstructors__container:not(.is-active) {
     display: none;
@@ -1641,6 +1648,11 @@ main .Recentlyadded__Browse-all img {
     display: none;
   }
 }
+@media (max-width: 1479px) and (width <= 90.06125rem) {
+  .main .TopInstructors__burger-button {
+    bottom: 4.375rem;
+  }
+}
 @media (max-width: 1479px) and (width <= 47.99875rem) {
   .main .TopInstructors__burger-button {
     font-size: 1.25rem;
@@ -1652,5 +1664,56 @@ main .Recentlyadded__Browse-all img {
     font-size: 1.0625rem;
     padding: 0.625rem;
     margin-bottom: 1.25rem;
+  }
+}
+
+.main .Companies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 6.25rem;
+}
+@media (width <= 30.06125rem) {
+  .main .Companies {
+    margin: 0 1.25rem;
+  }
+}
+.main .Companies__container {
+  display: flex;
+  max-width: 82.5rem;
+  justify-content: center;
+}
+.main .Companies__container .LogoBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.main .Companies__container .LogoBlock__image-container {
+  width: 12.5rem;
+  height: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 2rem 0 rgba(9, 26, 68, 0.07);
+}
+.main .Companies__txt {
+  align-self: center;
+  margin-right: 1.5rem;
+}
+.main .Companies__heading {
+  color: #1D2026;
+  margin-bottom: 1.5rem;
+}
+.main .Companies__paragraph {
+  color: #6E7485;
+}
+@media (max-width: 1429px) {
+  .main .Companies__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .main .Companies__container .LogoBlock {
+    justify-content: center;
+    margin-top: 2.5rem;
   }
 }

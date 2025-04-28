@@ -7,8 +7,11 @@
         height: auto;
         display: flex;
         justify-content: center;
+        @include laptop{
+            padding-bottom: rem(220);
+        }
         @include mobile{
-            padding-bottom: rem(250);
+            padding-bottom: rem(160);
         }
         @include mobile-s{
             padding-bottom: rem(80);

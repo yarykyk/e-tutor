@@ -9,6 +9,7 @@
         left: 50%;  
         transform: translate(-50%, -40%);
         z-index: 30;
+        margin-bottom: rem(-170);
         @include tablet{
             max-width: rem(700);
         }
@@ -77,6 +78,7 @@
     @media (max-width: 1479px) {
         .TopInstructors{
             width: rem(1000);
+            margin-bottom: rem(100);
             &__container{
                 &:not(.is-active){
                     display: none;
@@ -169,6 +171,9 @@
                 bottom: rem(150);
                 &:not(.is-active){
                     display: none;
+                }
+                @include laptop{
+                    bottom: rem(70);
                 }
                 @include mobile{
                     font-size: rem(20);
