@@ -81,6 +81,11 @@ h4, .h4, .heading04{
     line-height: 143%;
     letter-spacing: -0.01em;
 }
+.bodyTiny400{
+    font-weight: 400;
+    font-size: rem(10);
+    line-height: 100%;
+}
 .bodyTiny500{
     font-weight: 500;
     font-size: rem(10);
@@ -96,6 +101,13 @@ h4, .h4, .heading04{
     font-size: rem(18);
     line-height: 133%;
     letter-spacing: -0.01em;
+}
+.buttonMedium{
+    font-weight: 600;
+    font-size: rem(16);
+    line-height: 300%;
+    letter-spacing: -0.01em;
+    text-transform: capitalize;
 }
 
 a, 

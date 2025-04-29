@@ -1,0 +1,55 @@
+@use '../helpers/' as *;
+
+.main{
+    .Companies{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 rem(100);
+        margin-bottom: rem(80);
+        @include mobile-s{
+            margin: 0 rem(20);
+        }
+        &__container{
+            display: flex;
+            max-width: rem(1320);
+            justify-content: center;
+            .LogoBlock{
+                display: flex;
+                flex-wrap: wrap;
+                gap: rem(24);
+                &__image-container{
+                    width: rem(200);
+                    height: rem(100);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0 0 rem(32) 0 rgba(9, 26, 68, 0.07);
+                }
+            }
+        }
+        &__txt{
+            align-self: center;
+            margin-right: rem(24);
+        }
+        &__heading{
+            color: #1D2026;
+            margin-bottom: rem(24);
+        }
+        &__paragraph{
+            color: #6E7485;
+        }
+    }
+    @media (max-width: 1429px) {
+        .Companies{
+            &__container{
+                flex-direction: column;
+                text-align: center;
+                .LogoBlock{
+                    justify-content: center;
+                    margin-top: rem(40);
+                }
+            }
+        }
+    }
+}
