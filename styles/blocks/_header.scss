@@ -114,6 +114,9 @@
         &-left{
             display: flex;
             column-gap: rem(50);
+            @include tablet{
+                column-gap: rem(30);
+            }
             @include mobile{
                 column-gap: rem(15);
             }
@@ -205,6 +208,13 @@
             @include mobile-s{
                 width: rem(18);
                 height: rem(18);
+            }
+        }
+    }
+    @media (max-width: 883px) {
+        &__body{
+            &-left{
+                column-gap: rem(15);
             }
         }
     }
